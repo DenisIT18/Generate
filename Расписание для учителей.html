@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор расписания</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 2px solid black; /* Границы таблицы */
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="Примеры описания для расписания учителей.css">
+</head>
+<body>
+    <h1>Генератор расписания</h1>
+    <label for="numDays">Введите количество дней в неделе:</label>
+    <input type="number" id="numDays" value="5">
+    <br>
+    <label for="numClasses">Введите количество классов:</label>
+    <input type="number" id="numClasses" value="5">
+    <br>
+    <label for="numSubjects">Введите количество предметов в один день:</label>
+    <input type="number" id="numSubjects" value="1">
+    <br>
+    <button id="generateSchedule">Сгенерировать расписание</button>
+    <br>
+    <div id="schedule-table" style="display: none;">
+        <table>
+            <thead>
+                <tr>
+                    <th>День</th>
+                    <th>Класс</th>
+                    <th>Предмет</th>
+                </tr>
+            </thead>
+            <tbody id="scheduleTable">
+                <!-- Здесь будут добавляться строки с данными -->
+            </tbody>
+        </table>
+    </div>
+    <!-- Возвращаем кнопку "Проверить конфликты" -->
+    <button id="findConflictButton">Проверить конфликты</button>
+
+    <script src="Программа для составления расписания на языке программирования JS.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+#input-form {
+    margin: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    width: 50px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+#generateSchedule {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#generateSchedule:hover {
+    background-color: #0056b3;
+}
+
+#schedule-table {
+    margin-top: 20px;
+    display: none;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+.parallel-lesson {
+    background-color: red;
+}
+
+/* Устанавливаем красный фон для ячеек с конфликтами */
+.conflict {
+    background-color: red;
+}
+#findConflictButton:active {
+    background-color: green; /* Любой цвет, который вы хотите использовать */
+}
+
