@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ... -->
+</head>
+<body>
+  <div id="controls">
+    <a id="generateSchedule" href="Расписание для учителей">Сгенерировать расписание</a>
+  </div>
+  <script>
+  document.getElementById('generateSchedule').addEventListener('click', () => {
+  const numDays = document.getElementById('numDays').value;
+  const numClasses = document.getElementById('numClasses').value;
+  const numSubjects = document.getElementById('numSubjects').value;
+  const url = `Расписание для учителей?days=${numDays}&classes=${numClasses}&subjects=${numSubjects}`;
+  window.location.href = url;
+});
+  </script>
+</body>
+</html>
